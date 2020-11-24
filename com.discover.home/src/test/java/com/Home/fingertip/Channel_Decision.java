@@ -1,6 +1,7 @@
 package com.Home.fingertip;
 
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import POM.FingerTipDecision;
@@ -8,7 +9,7 @@ import POM.FingertipLoginpage;
 import discoverDollors.discoverDollor_pages.BaseTest;
 import discoverDollors.discoverDollor_pages.FileLibrary;
 import discoverDollors.discoverDollor_pages.WebDriverCommonLib;
-
+@Listeners(discoverDollors.discoverDollor_pages.MyListner.class)
 public class Channel_Decision extends BaseTest{
 	@Test
 	public void channel_decision() throws Throwable
@@ -29,6 +30,6 @@ public class Channel_Decision extends BaseTest{
     fd.DecisionCreation(f1.getPropValue(CHANNEL_PROP_PATH, "DecisionTitle"),f1.getPropValue(CHANNEL_PROP_PATH,"TitleDescription"),f1.getPropValue(CHANNEL_PROP_PATH,"DecisionPraposal"));
     Thread.sleep(25000);
     w.verify(w.getPageTite(),f1.getPropValue(CHANNEL_PROP_PATH, "DecisionVerification") , "Decision from channel Created ");
-   
+    Thread.sleep(10000);
 }
 }

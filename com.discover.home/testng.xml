@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="HOME_FIT">
+    <classes>
+      <class name="com.Home.fingertip.Login"/>
+      <class name="com.Home.fingertip.Channel_Home"/>
+      <class name="com.Home.fingertip.Channel_without_TaxandTopic"/>
+      <class name="com.Home.fingertip.Channel_Taxonomy"/>
+       <class name="com.Home.fingertip.Channel_topic"/>
+      <class name="com.Home.fingertip.Channel_TaxandTopic"/>
+      
+      <class name="com.Home.fingertip.Channel_OpenExisitingChannel"/>
+      <class name="com.Home.fingertip.Channel_PinTheChannel"/>
+      <class name="com.Home.fingertip.Channel_EditChannel"/>
+      
+       
+      <class name="com.Home.fingertip.Channel_openTask"/>
+      <class name="com.Home.fingertip.Channel_OpenDecison"/>
+       <class name="com.Home.fingertip.Channel_openPlan"/>
+        <class name="com.Home.fingertip.Channel_OpenObjective"/>
+        
+      <class name="com.Home.fingertip.Channel_Task"/>
+       <class name="com.Home.fingertip.Channel_Decision"/>
+      <class name="com.Home.fingertip.Channel_Objective"/>
+      
+      
+      <class name="com.Home.fingertip.Channel_ClickonEachsortOption"/>
+      <class name="com.Home.fingertip.Channel_Searchbar"/>
+      <class name="com.Home.fingertip.Channel_Refresh"/>
+      
+      
+      <class name="com.Home.fingertip.Channel_NewObjectivePopup"/>
+      <class name="com.Home.fingertip.Channel_newDecisionpopup"/>
+      <class name="com.Home.fingertip.Channel_NewTaskpopup"/>
+      <class name="com.Home.fingertip.Channel_NewPlanPopup"/>
+     
+     <class name="com.Home.fingertip.Channel_DeleteChannel"/>
+      
+     
+    
+    </classes>
+  </test> 
+</suite> 

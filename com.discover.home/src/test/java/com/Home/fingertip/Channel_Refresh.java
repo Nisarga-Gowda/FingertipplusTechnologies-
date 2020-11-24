@@ -1,13 +1,14 @@
 package com.Home.fingertip;
 
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import POM.FingertipLoginpage;
 import discoverDollors.discoverDollor_pages.BaseTest;
 import discoverDollors.discoverDollor_pages.FileLibrary;
 import discoverDollors.discoverDollor_pages.WebDriverCommonLib;
-
+@Listeners(discoverDollors.discoverDollor_pages.MyListner.class)
 public class Channel_Refresh extends BaseTest{
 	@Test
 	public void channel_refresh() throws Throwable
@@ -23,6 +24,8 @@ public class Channel_Refresh extends BaseTest{
 	WebDriverCommonLib w=new WebDriverCommonLib();
 	FileLibrary fl=new FileLibrary();
 	Reporter.log(w.getPageTite(),true);
+
+	Thread.sleep(25000);
 	}
 
 }

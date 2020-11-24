@@ -2,6 +2,7 @@ package discoverDollors.discoverDollor_pages;
 
 
 	import java.io.File;
+
 	import java.io.IOException;
 
 	import org.openqa.selenium.OutputType;
@@ -10,12 +11,14 @@ package discoverDollors.discoverDollor_pages;
 	import org.testng.ITestListener;
 	import org.testng.ITestResult;
 	import org.testng.Reporter;
-	import org.testng.internal.ITestInvoker;
+import org.testng.annotations.BeforeClass;
+import org.testng.internal.ITestInvoker;
 
 	import com.google.common.io.Files;
+	
 	public class MyListner extends BaseTest implements ITestListener
 	{
-
+		@BeforeClass
 		@Override
 		public void onTestStart(ITestResult result) {
 			Reporter.log(result.getName()+" TEST START", true);

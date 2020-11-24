@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Home.fingertip.Channel_DeleteChannel">
+      <class name="com.Home.fingertip.Channel_EditChannel">
         <methods>
-          <include name="channel_deletechannel"/>
+          <include name="Close"/>
+          <include name="channel_editchannel"/>
           <include name="openthebrowserentertheurl"/>
         </methods>
-      </class> <!-- com.Home.fingertip.Channel_DeleteChannel -->
+      </class> <!-- com.Home.fingertip.Channel_EditChannel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -25,7 +25,7 @@ Thread.sleep(15000);
 WebDriverCommonLib w=new WebDriverCommonLib();
 Reporter.log(w.getPageTite(),true);
 w.verify(fl.getPropValue(CHANNEL_PROP_PATH, "PlanVerification"), "Plan from channel | Salesforce", "Plan Page");
-
+Thread.sleep(10000);
 	}
 
 }

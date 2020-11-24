@@ -26,5 +26,6 @@ public class Channel_topic extends BaseTest {
 	
 	WebDriverCommonLib w=new WebDriverCommonLib();
 	w.verify(w.getPageTite(), f1.getPropValue(CHANNEL_PROP_PATH, "ChannelPageVerification"), "Channel Created");
+	Thread.sleep(25000);
 }
 	}

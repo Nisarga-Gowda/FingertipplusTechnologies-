@@ -25,7 +25,7 @@ Thread.sleep(15000);
 WebDriverCommonLib w=new WebDriverCommonLib();
 Reporter.log(w.getPageTite(),true);
 w.verify(fl.getPropValue(CHANNEL_PROP_PATH, "TaskVerfication"), "Automation task | Salesforce", "Task Page");
-
+Thread.sleep(10000);
 	}
 
 }

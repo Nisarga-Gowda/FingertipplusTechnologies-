@@ -25,5 +25,6 @@ public class Channel_Taxonomy extends BaseTest{
 		Thread.sleep(25000);
 		WebDriverCommonLib w=new WebDriverCommonLib();
 		w.verify(w.getPageTite(), f1.getPropValue(CHANNEL_PROP_PATH, "ChannelPageVerification"), "Channel Created");
+		Thread.sleep(25000);
 	}
 }

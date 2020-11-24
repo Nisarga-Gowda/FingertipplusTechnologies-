@@ -25,6 +25,6 @@ public class Channel_OpenDecison extends BaseTest {
 	Reporter.log(w.getPageTite(),true);
 	w.verify(fl.getPropValue(CHANNEL_PROP_PATH, "Decisionverification2"), "Decision from channel | Salesforce", "Decision Page");
 
-
+	Thread.sleep(10000);
 }
 }

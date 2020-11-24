@@ -24,6 +24,7 @@ public class Channel_NewObjectivePopup extends BaseTest {
 	WebDriverCommonLib w=new WebDriverCommonLib();
 	Reporter.log(w.getPageTite(),true);
     w.verifyElement(f.getverifyobjectivepopup(), "New Objective","New Objective popup ");
+    Thread.sleep(10000);
 }}
 
 

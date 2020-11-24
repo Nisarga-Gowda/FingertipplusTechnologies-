@@ -1,6 +1,7 @@
 package com.Home.fingertip;
 
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import POM.FingertipLoginpage;
@@ -8,7 +9,7 @@ import POM.Fingertip_TaskTab;
 import discoverDollors.discoverDollor_pages.BaseTest;
 import discoverDollors.discoverDollor_pages.FileLibrary;
 import discoverDollors.discoverDollor_pages.WebDriverCommonLib;
-
+@Listeners(discoverDollors.discoverDollor_pages.MyListner.class)
 public class Channel_Task extends BaseTest{
 	@Test
 public void channel_task() throws Throwable 
@@ -30,5 +31,7 @@ public void channel_task() throws Throwable
 	Thread.sleep(20000);
 	Reporter.log(w.getPageTite(),true);
 	w.verify(w.getPageTite(), f1.getPropValue(CHANNEL_PROP_PATH, "TaskVerification"), "Task Page Opened");
+
+	Thread.sleep(25000);
 }
 }

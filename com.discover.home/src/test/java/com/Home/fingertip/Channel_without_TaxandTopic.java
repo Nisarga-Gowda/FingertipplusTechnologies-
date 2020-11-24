@@ -22,7 +22,10 @@ public class Channel_without_TaxandTopic extends BaseTest{
 		WebDriverCommonLib w=new WebDriverCommonLib();
 		f.setchannelName(f1.getPropValue(CHANNEL_PROP_PATH, "ChannelName"));
 		f.clickSaveChannel();
+		Thread.sleep(25000);
 		w.verifyElement(f.getverifywithoutTaxandTopic(), f1.getPropValue(CHANNEL_PROP_PATH, "New Channel"),"Channel is not created - Needs at least topic or Taxonomy");
+		Thread.sleep(25000);
 	}
+	
 
 }

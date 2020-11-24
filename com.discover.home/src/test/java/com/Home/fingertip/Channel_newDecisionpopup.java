@@ -25,6 +25,7 @@ public class Channel_newDecisionpopup extends BaseTest{
 		WebDriverCommonLib w=new WebDriverCommonLib();
 		Reporter.log(w.getPageTite(),true);
 		w.verifyElement(f.getverifyDecisionpopup(), "New Decision", "New decision popup opened");
+		Thread.sleep(10000);
 
 	}
 

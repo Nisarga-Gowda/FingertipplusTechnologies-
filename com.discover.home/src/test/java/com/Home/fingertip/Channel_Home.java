@@ -19,6 +19,7 @@ public class Channel_Home extends BaseTest{
 		FileLibrary fl=new FileLibrary();
 		
 		w.verify( w.getPageTite(),fl.getPropValue(Login_PROP_PATH, "HomeTitle"), "Lightning Experience");
+		Thread.sleep(10000);
 
 	}
 

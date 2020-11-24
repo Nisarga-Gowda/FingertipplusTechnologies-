@@ -26,7 +26,7 @@ Thread.sleep(15000);
 WebDriverCommonLib w=new WebDriverCommonLib();
 Reporter.log(w.getPageTite(),true);
 w.verify(fl.getPropValue(CHANNEL_PROP_PATH, "ObjectiveVerfication"), "Automation Objective | Salesforce", "Objective Page");
-
+Thread.sleep(10000);
 	}
 
 }

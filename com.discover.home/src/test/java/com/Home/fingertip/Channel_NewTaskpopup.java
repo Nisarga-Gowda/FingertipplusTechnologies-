@@ -24,5 +24,5 @@ public class Channel_NewTaskpopup extends BaseTest{
 	Thread.sleep(20000);
 	WebDriverCommonLib w=new WebDriverCommonLib();
 	w.verifyElement(f.getverifyTaskpopup(), "New Task","New Task popup");
-
+	Thread.sleep(10000);
 }}

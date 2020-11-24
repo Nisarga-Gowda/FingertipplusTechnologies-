@@ -1,13 +1,14 @@
 package com.Home.fingertip;
 
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import POM.FingertipLoginpage;
 import discoverDollors.discoverDollor_pages.BaseTest;
 import discoverDollors.discoverDollor_pages.FileLibrary;
 import discoverDollors.discoverDollor_pages.WebDriverCommonLib;
-
+@Listeners(discoverDollors.discoverDollor_pages.MyListner.class)
 public class Channel_ClickonEachsortOption extends BaseTest {
 	@Test
 	public void channel_clickoneachsortoption() throws Throwable
@@ -21,6 +22,6 @@ public class Channel_ClickonEachsortOption extends BaseTest {
     f.ClickoneAfteranother();
     WebDriverCommonLib w=new WebDriverCommonLib();
     w.verifyElement(f.getchannelSortVerification(), "object-icon", "Sorted"); 
-
+    Thread.sleep(10000);
 }
 }

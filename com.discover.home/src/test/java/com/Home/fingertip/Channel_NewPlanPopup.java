@@ -24,4 +24,5 @@ public class Channel_NewPlanPopup extends BaseTest{
 	WebDriverCommonLib w=new WebDriverCommonLib();
 	Reporter.log(w.getPageTite(),true);
     w.verifyElement(f.getverifyPlanpopup(), "New Plan","New Plan popup opened");
+    Thread.sleep(10000);
 }}

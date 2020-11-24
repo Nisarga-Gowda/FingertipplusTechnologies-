@@ -1,13 +1,14 @@
 package com.Home.fingertip;
 
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import POM.FingertipLoginpage;
 import discoverDollors.discoverDollor_pages.BaseTest;
 import discoverDollors.discoverDollor_pages.FileLibrary;
 import discoverDollors.discoverDollor_pages.WebDriverCommonLib;
-
+@Listeners(discoverDollors.discoverDollor_pages.MyListner.class)
 public class Channel_DeleteChannel extends BaseTest{
 	@Test
 	public void channel_deletechannel() throws Throwable
@@ -25,7 +26,7 @@ public class Channel_DeleteChannel extends BaseTest{
 		 Reporter.log(w.getPageTite(),true);
 		 
 	 w.verify(fl.getPropValue(CHANNEL_PROP_PATH, "ChannelPageVerification"), "Home | Salesforce", "Channel deleted");
-		
+	 Thread.sleep(10000);	
 	}
 
 }
