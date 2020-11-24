@@ -1,0 +1,34 @@
+ObjectiveName Automation Objective
+IntialValue 1
+TargetValue 100
+StartDate 3.11.2020
+EndDate 5.11.2020
+ObjectiveVerification Automation Objective | Salesforce
+
+TASK
+TaskTitle Automation task
+TaskComments Creating 
+TaskVerfication Automation task | Salesforce
+
+
+Decision 
+DecisionTitle Automation Test Decision from channel
+TitleDescription Decision from channel
+DecisionPraposal Test
+DecisionVerification Automation Test Decision from channel | Salesforce
+Decisionverification2 Decision from channel | Salesforce
+
+
+Plan
+PlanTitle Plan from channel
+PlanVerification Plan from channel | Salesforce
+
+
+
+
+Channel
+ChannelName Automation Test
+TaxonomyName Qa
+TopicName QA
+ChannelPageVerification Home | Salesforce
+ChannelDecisionverification Automation Test | Salesforce

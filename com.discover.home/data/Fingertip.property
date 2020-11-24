@@ -1,0 +1,9 @@
+//Login
+url http://test.salesforce.com/
+//url https://ftqasite--qasite.lightning.force.com/lightning/r/Decision__c/a06O000000ftCzxIAE/view
+username jyothi.g@fingertipplus.com.qa
+passowrd Salesforce@1
+browser chrome
+HomeTitle Lightning Experience
+
+

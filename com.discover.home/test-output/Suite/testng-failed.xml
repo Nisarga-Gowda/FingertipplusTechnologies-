@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="discoverDollors.NewsOption">
+        <methods>
+          <include name="news"/>
+        </methods>
+      </class> <!-- discoverDollors.NewsOption -->
+      <class name="discoverDollors.Team">
+        <methods>
+          <include name="team"/>
+        </methods>
+      </class> <!-- discoverDollors.Team -->
+      <class name="discoverDollors.Homescript">
+        <methods>
+          <include name="home"/>
+        </methods>
+      </class> <!-- discoverDollors.Homescript -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
