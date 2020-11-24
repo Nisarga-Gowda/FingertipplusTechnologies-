@@ -27,8 +27,10 @@ public class Channel_TaxandTopic extends BaseTest {
 	f.setTaxonomynameclcik();
 	Thread.sleep(25000);
 	f.setTaxonomyName(f1.getPropValue(CHANNEL_PROP_PATH, "TaxonomyName"));
-	f.clickSaveChannel();
-	Thread.sleep(25000);
+	Thread.sleep(15000);
+	
+		f.clickSaveChannel();
+Thread.sleep(25000);
 	
 	WebDriverCommonLib w=new WebDriverCommonLib();
 	w.verify(w.getPageTite(), f1.getPropValue(CHANNEL_PROP_PATH, "ChannelPageVerification"), "Channel Created");}

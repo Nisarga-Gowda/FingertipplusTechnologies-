@@ -22,6 +22,7 @@ public class Channel_EditChannel extends BaseTest{
 	f.clickchannelEditchannelIcon();
 	Thread.sleep(10000);
 	f.clickchannelChangeIcon();
+	
 	Thread.sleep(10000);
 	f.clickchannelEditUpdate();
 	Thread.sleep(20000);

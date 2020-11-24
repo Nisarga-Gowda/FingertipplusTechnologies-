@@ -118,9 +118,22 @@ public class FingertipLoginpage extends BaseTest {
 	@FindBy(xpath="//span[.='Edit Channel' and @class='slds-truncate']") private WebElement channelEdit;
 	@FindBy(xpath="//button[@class='slds-button mb-btn--small']") private WebElement channelEditchannelIcon;
 	@FindBy(xpath="//div[.='Answer Public' and @class='slds-media__body']") private WebElement channelChangeIcon;
+	//@FindBy(xpath="//div[@class='slds-media__body' and .='Account']") private WebElement channelChangeDecorationimage;
+	
+	@FindBy(xpath="//li[@class='slds-p-vertical--x-small slds-p-horizontal--small slds-border_bottom' and @data-val='standard:answer_public,Answer Public']") private WebElement channelChangeDecorationimage;
 	@FindBy(xpath="//button[@class='slds-button slds-button--neutral slds-button--brand' and .='Update']") private WebElement channelEditUpdate;
 	
 	@FindBy(xpath="//button[@class='slds-button slds-button--neutral slds-button--brand' and .='Delete']") private WebElement channelDeleteUpdate;
+	public WebElement getchannelChangeDecorationimage()
+	{
+		return channelChangeDecorationimage;
+	}
+	
+	public void clickchannelChangeDecorationimage() 
+	{
+		channelChangeDecorationimage.click();
+		//channelChangeDecorationimage.sendKeys(Keys.ENTER);
+	}
 	public WebElement getchannelDeleteUpdate()
 	{
 		return channelDeleteUpdate;
@@ -159,9 +172,9 @@ public class FingertipLoginpage extends BaseTest {
 	{
 		channelEditchannelIcon.click();
 		Thread.sleep(5000);
-		channelEditchannelIcon.sendKeys(Keys.DOWN);
-		channelEditchannelIcon.sendKeys(Keys.DOWN);
-		channelEditchannelIcon.sendKeys(Keys.DOWN);
+//		channelEditchannelIcon.sendKeys(Keys.DOWN);
+//		channelEditchannelIcon.sendKeys(Keys.DOWN);
+//		channelEditchannelIcon.sendKeys(Keys.DOWN);
 		channelEditchannelIcon.sendKeys(Keys.ENTER);
 		
 	}
